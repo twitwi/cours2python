@@ -27,7 +27,7 @@
       {% endif %}
 
       {% comment %} Always show link to home page. {% endcomment %}
-      <a class="navbar-brand" href="{{ page.root }}/">Home</a>
+      <a class="navbar-brand" href="{{ page.root }}/">Accueil</a>
 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,6 +50,8 @@
           </ul>
         </li>
 	{% endif %}
+
+        <li><a href="{{ page.root }}/installation/">Installation</a></li>
 
 	{% comment %} Show extras for lessons or if this is the main workshop-template repo (where they contain documentation). {% endcomment %}
 	{% if site.kind == "lesson" or site.github.repository_name == "workshop-template" %}

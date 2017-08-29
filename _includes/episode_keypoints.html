@@ -2,10 +2,13 @@
   Display key points for an episode.
 {% endcomment %}
 <blockquote class="keypoints">
-  <h2>Key Points</h2>
+  <h2>Points Clés</h2>
   <ul>
     {% for keypoint in page.keypoints %}
     <li>{{ keypoint|markdownify }}</li>
     {% endfor %}
   </ul>
+  {% if page.syntax %}
+  <h2>Syntaxe : {{ page.syntax | markdownify }}</h2>
+  {% endif %}
 </blockquote>
