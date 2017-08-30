@@ -18,10 +18,10 @@ keypoints:
 > Ainsi, la condition :
 > ~~~
 > if «A» :
->     «B»         # corps de la boucle
+>     «B»         # corps du if
 > else:
 >     «C»         # corps du else
-> «D»         # après la boucle
+> «D»         # après la condition
 > ~~~
 > {: .source}
 > 
@@ -66,7 +66,7 @@ keypoints:
 >     «P3»
 > else:
 >     «E»
-> «F»         # après la boucle
+> «F»         # après la condition
 > ~~~
 > {: .source}
 > 

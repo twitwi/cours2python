@@ -14,17 +14,17 @@ NOkeypoints:
 ---
 
 
-
-Bienvenu sur ce site dédié à la programmation en Python 3.
-Adapté aux novices, ce site couvre néanmoins différents sujets, dont certains sont plus avancés.
+# Bienvenue !
+Ce site dédié à la programmation en Python 3.
+Adapté aux novices, il couvre néanmoins différents sujets, dont certains sont plus avancés.
 
 
 ## Cours associés
 
 Ce site sert, entre autre, de référence et de complément pour les cours pour les cours suivant à l'université Jean Monnet de Saint Étienne :
 
-- le cours « [outils informatique](01-accueil) » en L1 MISPIC
-- le cours « informatique » en L2 SPICHI
+- le cours « [outils informatique](01-cours-outils-info) » en L1 MISPIC
+- le cours « [informatique](20-cours-info-l2) » en L2 SPICHI
 
 > ## Pourquoi Apprendre à Programmer
 > Pour la plupart des gens, programmer n'est pas une fin en soi.
