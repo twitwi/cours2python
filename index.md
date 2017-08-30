@@ -23,7 +23,7 @@ Adapté aux novices, ce site couvre néanmoins différents sujets, dont certains
 
 Ce site sert, entre autre, de référence et de complément pour les cours pour les cours suivant à l'université Jean Monnet de Saint Étienne :
 
-- le cours « [outils informatique](01a-accueil) » en L1 MISPIC
+- le cours « [outils informatique](01-accueil) » en L1 MISPIC
 - le cours « informatique » en L2 SPICHI
 
 > ## Pourquoi Apprendre à Programmer

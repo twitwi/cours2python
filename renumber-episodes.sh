@@ -32,6 +32,9 @@ for i in $(cat ../,,episodes) ; do
     if test "$i" != "$as" ; then
         #echo DOING: $PRE mv $i $as
         $PRE mv $i $as
+        if [ "$PRE" != "echo" ] ; then
+            sed -i -e "s/(${i%.md}/(${as%.md}/g" $(find .. -name _site -prune -or -name \*.md)
+        fi
     fi
     c=$(($c + 1))
 done
