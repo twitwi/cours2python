@@ -23,10 +23,7 @@ Fichier
 :    Dans un espace de stockage, un document qui peut être soit du texte brut (comme un programme python), soit un fichier binaire (comme une image jpeg ou un document excel ou word).
 {: #fichier}
 
-TEST1
-:    ta
 
-TEST2
-:    to
-{: #TEST}
 
+Merci de m'envoyer vos contributions à ce glossaire, par exemple par email
+(ou via github <a href="{{site.github.repository_url}}/edit/master/{{page.path}}"> ⇒ <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>).

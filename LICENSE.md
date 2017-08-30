@@ -1,8 +1,14 @@
 ---
 layout: page
-title: "Licenses"
+title: "Licences"
 permalink: /license/
 ---
+
+Ce site utilise la template proposée par Software Carpentry et certains éléments se basent sur le contenu de leurs lessons.
+Ce contenu, comme celui de software carpentry est sous licence CC BY 4.0 (voir ci-dessous).
+Vous pouvez donc réutiliser ce contenu, avec une attribution correcte.
+Merci de m'envoyer un mail rapide si vous le faites ou avez des questions.
+
 ## Instructional Material
 
 All Software Carpentry and Data Carpentry instructional material is
