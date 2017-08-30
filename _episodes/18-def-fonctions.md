@@ -25,9 +25,9 @@ keypoints:
 Nous avons vu comment utiliser des fonctions existantes, telles que `print`, `help`, `len` (prédéfinies), `log`, `sqrt`, `sin` (du module `math`), `random`, `randrange` (du module `random`), `creer`, `couleur`, `disque` (du module `qtido`).
 Pour pouvoir utiliser certaines fonctions, il faut les importer, comme vu précédemment.
 Une fois cela fait, nous pouvons utiliser la fonction autant de fois que voulu.
-L'utilisation d'une fonction s'appelle « un appel une fonction ».
+L'utilisation d'une fonction s'appelle « un appel une fonction » ou « une invocation de fonction ».
 
-Une fonction sers généralement à simplifier l'écriture et la lecture d'un programme.
+Une fonction sert généralement à simplifier l'écriture et la lecture d'un programme.
 Supposons que l'on a deux variables représentant les coordonnées d'un vecteur.
 
 ~~~python
@@ -41,13 +41,13 @@ Pour calculer la longueur du vecteur (x, y) et stocker sa valeur dans une nouvel
 d = (x**2 + y**2) ** 0.5
 ~~~
 
-Si on a souvent besoin, de calculer la longueur d'un vecteur (appelée aussi « norme »), on préférais, pour éviter de se répéter et pour rendre le programme plus lisible :
+Si on a souvent besoin, de calculer la longueur d'un vecteur (appelée aussi « norme »), on préférait, pour éviter de se répéter et pour rendre le programme plus lisible :
 
 ~~~python
 d = norme(x, y)
 ~~~
 
-En cachant (abstrayant) les détails d'une opération ou d'un calcul complexe, une fonction permet de simplifier l'écriture et la lecture d'un programme, et d'éviter certaines erreurs.
+En cachant (abstrayant) les détails d'une opération ou d'un calcul compliqué, une fonction permet de simplifier l'écriture et la lecture d'un programme, et d'éviter certaines erreurs.
 Comme exemple, voici un extrait de programme dans lequel on suppose qu'il existe des variables `x1`, `y1`, `x2`, `y2`, contenant les coordonnées de 2 vecteurs.
 Deux versions sont données, avec et sans l'utilisation de la fonction `norme`.
 

@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Informatique et Programmation Impérative"
 teaching: 0
 exercises: 0
 questions:
@@ -22,12 +22,6 @@ Un ordinateur est composé de différentes parties et, d'un point de vue matéri
 Il ne reste cependant qu'un simple automate qui réalise les ordres qu'on lui donne.
 Un ordinateur ne sait en fait réaliser que des ordres (ou instructions) très simples sur des nombres : addition, soustraction, multiplication, division, lecture en mémoire, écriture en mémoire.
 Tous les logiciels et les programmes que nous utilisons aujourd'hui ont été créés à partir de ces instructions simples.
-
-
-
-ordinateur
-prog et langages
-prog imp
 
 
 ## Informatique et programmation

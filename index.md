@@ -1,20 +1,30 @@
 ---
 layout: lesson
 root: .
+NOquestions:
+- "Qu'est ce que ce site ?"
+- "Que peut-on attendre de ce site ?"
+NOobjectives:
+- "Comprendre si ce site peut être utile."
+- "Comprendre la structure de ce site."
+NOkeypoints:
+- "Ce site couvre la programmation en Python 3, en partant de zéro."
+- "Ce site est composé de micro-modules, allant du niveau novice à plus avancé."
+- "Ce site sert entre autre de référence pour plusieurs cours, en complément des démonstrations, travaux pratiques et projets."
 ---
 
-Bienvenu dans ce cours sur l'apprentissage de la programmation en Python.
-Ce cours se concentre sur un but : **apprendre les bases de programmation**.
-En fait, l'accent est mis sur la programmation dite « impérative », où un programme décrit la suite d'ordres que l'ordinateur doit exécuter.
 
-Pour atteindre ce but, ce cours débute avec l'interpréteur **bash** mais utilise principalement le langage **Python 3**.
-Il existe de nombreux (excellents) langages de programmation, et le choix du langage Python 3 est motivé par les points suivants :
 
-1. la pratique est très importante pour apprendre à programmer, il faut donc forcément faire un choix de langage,
-2. Python est gratuit, propose une très bonne documentation et fonctionne presque sur tous les ordinateurs,
-3. Python a une très grande communauté (encore en pleine croissance) et est utilisé très largement, de la création de sites webs à de nombreux domaines scientifiques,
-4. l'expérience a montré qu'il est plus facile pour les débutants d'apprendre Python que la plupart des autres langages de programmation,
-5. bien que les versions 2 et 3 de Python existent et soient actives, la version 3 de Python (par exemple, Python 3.5) est plus cohérente pour l'apprentissage et plus durable que la version 2 (par exemple Python 2.7).
+Bienvenu sur ce site dédié à la programmation en Python 3.
+Adapté aux novices, ce site couvre néanmoins différents sujets, dont certains sont plus avancés.
+
+
+## Cours associés
+
+Ce site sert, entre autre, de référence et de complément pour les cours pour les cours suivant à l'université Jean Monnet de Saint Étienne :
+
+- le cours « [outils informatique](01a-accueil) » en L1 MISPIC
+- le cours « informatique » en L2 SPICHI
 
 > ## Pourquoi Apprendre à Programmer
 > Pour la plupart des gens, programmer n'est pas une fin en soi.
