@@ -1,5 +1,5 @@
 ---
-title: "Cours −− Outils Informatique"
+title: "〚Cours〛Outils Informatique"
 teaching: 0
 exercises: 0
 questions:

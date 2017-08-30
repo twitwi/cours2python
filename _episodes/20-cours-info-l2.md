@@ -1,5 +1,5 @@
 ---
-title: "Cours −− Informatique (L2)"
+title: "〚Cours〛Informatique (L2)"
 teaching: 0
 exercises: 0
 questions:

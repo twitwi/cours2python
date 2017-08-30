@@ -154,3 +154,10 @@ span.fold-unfold {
   margin-left: 1em;
   opacity: 0.5;
 }
+
+
+/** custom addition to swc **/
+.number-h2 {display: none;}
+.number-h2 ~ h1 {counter-reset: steps}
+.number-h2 ~ h2 {counter-increment: steps;}
+.number-h2 ~ h2::before {content: counter(steps) ") ";}

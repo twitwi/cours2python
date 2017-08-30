@@ -18,10 +18,14 @@ NOkeypoints:
 Ce site dédié à la programmation en Python 3.
 Adapté aux novices, il couvre néanmoins différents sujets, dont certains sont plus avancés.
 
+Ce site est composé de *micro-modules* (ou épisodes) : chaque micro-module est rapide à lire et traite d'un point précis.
+Ces micro-modules sont classés dans l'ordre recommandé de lecture, mais il est possible de passer certains micro-modules sans problème.
 
 ## Cours associés
 
-Ce site sert, entre autre, de référence et de complément pour les cours pour les cours suivant à l'université Jean Monnet de Saint Étienne :
+Ce site sert, entre autre, de référence et de complément pour les cours pour les cours universitaire de l'université Jean Monnet de Saint Étienne.
+Les épisodes marqués `〚Cours〛` correspondent en fait à une description de ces cours.
+Voici les cours concernés :
 
 - le cours « [outils informatique](01-cours-outils-info) » en L1 MISPIC
 - le cours « [informatique](20-cours-info-l2) » en L2 SPICHI

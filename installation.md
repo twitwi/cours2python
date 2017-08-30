@@ -13,7 +13,8 @@ permalink: /installation/
 > - la bibliothèque « fait maison » *qtido* qui elle même utilise une bibliothèque plus classique appelée Qt.
 {: .checklist}
 
-
+>
+{: .number-h2}
 
 
 # Installation pour un système d'exploitation Windows
@@ -57,7 +58,15 @@ Ensuite, ouvrez un "terminal" (voir ci dessus si vous êtes sous windows) et tap
 ## Éditeur de texte sous Windows
 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
-Vous pouvez aussi essayer d'autres éditeurs de textes, par exemple [https://atom.io/](https://atom.io/).
+Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus simples à installer.
+
+### Alternatives à Emacs
+{: #alteditor}
+
+À la place d'emacs, il est possible d'utiliser, pour éditer du Python :
+
+- [https://atom.io/](https://atom.io/), un éditeur léger et rapide,
+- [PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux), en version gratuite « community », un éditeur complet et plein de fonctionalités.
 
 ### Emacs sous Windows
 
@@ -89,7 +98,7 @@ Il est recommandé de suivre les instructions « [Python3 sous Windows](#anacond
 ## Éditeur de texte sous Mac
 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
-Vous pouvez aussi essayer d'autres éditeurs de textes, par exemple [https://atom.io/](https://atom.io/).
+Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#alteditor) ».
 
 ### Emacs (MacOS)
 
@@ -111,6 +120,9 @@ Il suffit de trouver comment lancer un "terminal" depuis votre Linux.
 
 ## Python3 (Linux)
 
+Vous pouvez suivre les même instructions que « [Python3 sous Windows](#anaconda) ».
+Ou alors, vous pouvez suivre les instructions ci-dessous.
+
 Le cours utilise python en version 3.
 Il faut donc installer cette version.
 Vous pouvez très probablement utiliser votre gestionnaire de paquets.
@@ -131,7 +143,7 @@ Si votre gestionnaire de paquets ne vous permet pas l'installation des choses ci
 ## Éditeur de texte sous Linux
 
 Dans les cours/tp, nous utilisons « emacs » comme éditeur de texte.
-Vous pouvez aussi essayer d'autres éditeurs de textes, par exemple [https://atom.io/](https://atom.io/).
+Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#alteditor) ».
 
 ### Emacs (Linux)
 
