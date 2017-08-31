@@ -21,7 +21,7 @@ keypoints:
 > - Pour chaque élément de la liste, la variable est affecté à la valeur de cet élément et le corps de la boucle est exécuté.
 > - Le corps de la boucle est donc exécuté autant de fois qu'il y a d'éléments dans la liste donnée.
 > 
-> ~~~
+> ~~~python
 > for «var» in «liste» :
 >     «instruction»
 >     «instruction»
@@ -33,7 +33,7 @@ keypoints:
 > 
 > Par exemple, si l'on considère que la liste est `[10, 20, 30]`, alors la boucle :
 > 
-> ~~~
+> ~~~python
 > for «var» in [10, 20, 30] :
 >     «A»
 > «B»
@@ -42,7 +42,7 @@ keypoints:
 > 
 > est équivalente à :
 > 
-> ~~~
+> ~~~python
 > «var» = 10
 > «A»
 > «var» = 20

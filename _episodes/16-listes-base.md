@@ -24,7 +24,7 @@ keypoints:
 > Pour créer une liste il faut mettre les valeurs voulues entre crochets et séparées par des virgules.
 > On peut donc créer une liste (et l'affecter à la variable «var») avec :
 > 
-> ~~~
+> ~~~python
 > «var» = [ «expression», «expression», «…» ]
 > ~~~
 > {: .source}
@@ -32,7 +32,7 @@ keypoints:
 > Il peut y avoir un nombre quelconque d'expressions.
 > Il peut en particulier possible de ne mettre aucune expression, créant ainsi une liste, par exemple avec :
 > 
-> ~~~
+> ~~~python
 > «var» = []
 > ~~~
 > {: .source}
@@ -42,14 +42,14 @@ keypoints:
 > ## Syntaxe : accès à un élément d'une liste
 > Il est possible d'accéder à un élément d'une liste avec :
 > 
-> ~~~
+> ~~~python
 > «liste»[«indice»]
 > ~~~
 > {: .source}
 > 
 > Cet accès peut servir à changer la valeur d'un élément d'une liste, avec :
 > 
-> ~~~
+> ~~~python
 > «liste»[«indice»] = «expression»
 > ~~~
 > {: .source}

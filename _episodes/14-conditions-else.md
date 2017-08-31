@@ -16,7 +16,7 @@ keypoints:
 > 
 > Le bloc de l'instruction `if` peut être suivi de l'instruction `else:` et d'un bloc qui sera exécuté si la condition est fausse (a la valeur False).
 > Ainsi, la condition :
-> ~~~
+> ~~~python
 > if «A» :
 >     «B»         # corps du if
 > else:
@@ -27,7 +27,7 @@ keypoints:
 > 
 > est équivalente à (sachant que `not(…)` permet de d'inverser une valeur booléenne) :
 > 
-> ~~~
+> ~~~python
 > if «A» :
 >     «B»
 > if not(«A») :
@@ -39,7 +39,7 @@ keypoints:
 
 
 <!--
-> ~~~
+> ~~~python
 > if «condition» :
 >     «instruction»
 >     «…»
@@ -57,7 +57,7 @@ keypoints:
 > Il est possible d'utiliser après un `if` (et avant le potentiel `else`) le mot clé `elif` (pour « else if », signifiant « sinon, si ».
 > La construction avec `elif` peut être ré-écrite à l'aide d'un second `if` imbriqué dans le `else`.
 > Ainsi, par exemple, la condition :
-> ~~~
+> ~~~python
 > if «T1» :
 >     «P1»
 > elif «T2» :
@@ -72,7 +72,7 @@ keypoints:
 > 
 > est équivalente à :
 > 
-> ~~~
+> ~~~python
 > if «T1» :
 >     «P1»
 > else:

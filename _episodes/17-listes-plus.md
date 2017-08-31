@@ -25,7 +25,7 @@ keypoints:
 > ## Syntaxe : test d'appartenance à une liste
 > Il est possible de regarder si un élément est dans une liste à l'aide du mot clé `in`, par exemple ici dans un `if` :
 > 
-> ~~~
+> ~~~python
 > if «el» in «list» :
 >     «instruction»
 > ~~~

@@ -29,7 +29,7 @@ Au départ la tortue est tournée vers la droite.
 La tortue accepte de recevoir différents ordres pour avancer (d'un nombre de pixels), tourner (d'un angle en degrés) ou lever/baisser le stylo.
 
 Voici un exemple, où la tortue trace un triangle équilatéral de coté 100 pixels.
-~~~
+~~~python
 from qtido import *
 
 f = creer(800, 600)
@@ -52,7 +52,7 @@ t.tortue_avance(100)
 > Les fonctions de la bibliothèque `math`, comme `acos` (arc cosinus en radians) et `degrees` (qui convertis des radians en degrés), peuvent être utiles pour calculer le ou les angles nécessaires.
 >
 > > ## Solution
-> > ~~~
+> > ~~~python
 > > from qtido import *
 > > import math
 > > 
@@ -84,7 +84,7 @@ Ainsi le schéma suivant :
 
 illustre ce que fait le programme :
 
-~~~
+~~~python
 from qtido import *
 
 # créer une petite fenêtre de 32x13 pixels
@@ -108,7 +108,7 @@ attendre_pendant(f, 1000)
 > ![Repère qtido](../fig/qtido/challenge-rectangles.svg)
 > 
 > > ## Solution
-> > ~~~
+> > ~~~python
 > > from qtido import *
 > > f = creer(32, 13)
 > > 

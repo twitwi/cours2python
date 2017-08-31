@@ -26,7 +26,7 @@ keypoints:
 > - Toute ligne qui commence par `#` (dièse) est ignorée par Python.
 > - Tout ce qui suit un `#` est ignoré par l'interpréteur Python (sauf dans une chaîne de caractères).
 > 
-> ~~~
+> ~~~python
 > # Toute cette ligne est un commentaire
 > print("Bonjour") # Ceci est un commentaire
 > print("Suivez #python ! (et ce n'est pas un commentaire).")

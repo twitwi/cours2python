@@ -25,7 +25,7 @@ keypoints:
 > - Une insruction conditionnelle démarre par le mot clé `if` suivi d'une condition (appelé aussi test), suivi de `:` puis d'un bloc.
 > - Un bloc est constitué d'une ou plusieurs lignes d'un programme qui sont indentées (toute commençant par plus d'espace que la ligne `if` et toute avec le même nombre d'espace.) ; visuellement le bloc est décalé vers sur la droite.
 > 
-> ~~~
+> ~~~python
 > if «condition» :
 >     «instruction»
 >     «instruction»

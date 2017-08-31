@@ -155,7 +155,7 @@ Puisque l'instruction `return a` interrompt la fonction, l'instruction `return b
 > - Chaque paramètres est un nom de variable.
 > - La définition de la fonction ne fait rien en soit, le corps de la fonction n'est appelé que lorsqu'on appelle la fonction.
 > 
-> ~~~
+> ~~~python
 > def «nom»(«var1», «var2», ...):
 >     «instruction»
 >     «instruction»

@@ -24,14 +24,14 @@ keypoints:
 ---
 
 > ## Multiplication de ce qui est tapé !
-> Écrire un programme qui demande à l'utilisateur « Entrez un nombre : », puis affiche ce qui a été entré multiplié par 5.
+> Écrire un programme qui demande à l'utilisateur « Entrez un nombre : », puis affiche exactement ce qui a été entré multiplié par l'entier 5.
 > 
 > Que se passe-t-il quand l'utilisateur tape `123` ?
 > et quand il tape `Hey` ?
 > pourquoi ?
 > 
 > > ## Solution
-> > ~~~
+> > ~~~python
 > > v = input("Entrez un nombre : ")
 > > print(v * 5)
 > > ~~~
