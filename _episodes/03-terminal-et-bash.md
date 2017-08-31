@@ -13,7 +13,7 @@ keypoints:
 - "Le terminal est un programme qui ouvre une fenêtre et y exécute un autre programme (par exemple un interpéteur de commande)."
 - "Le terminal lit ce qui est tapé au clavier et l'envoie au programme lancé."
 - "Le terminal affiche la sortie du programme lancé."
-- "Bash est un interpréteur de commandes (dont le nom est le premier mot tapé dans une commande)."
+- "Bash est un interpréteur de commandes (la commande est le premier mot tapé sur une ligne)."
 - "La plupart des commandes Bash sont d'autres programmes (comme `ls`)."
 - "Bash a aussi des commandes internes (comme `pwd` et `cd`)."
 - "Bash à une notion de répertoire courant : il se « promène » dans l'arborescence de répertoires."

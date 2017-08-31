@@ -15,6 +15,6 @@ keypoints:
 - "Un chemin qui commence par `/` est un chemin absolu."
 - "Tout autre chemin est un chemin relatif au repertoire courant."
 - "Les chemins se lisent de gauche à droite, avec `/` comme séparateur."
-- "Le répertoire spécial `.` représente toujours le répertoire courant."
 - "Le répertoire spécial `..` représente le parent du répertoire concerné."
+- "Le répertoire spécial `.` représente le répertoire lui-même (répertoire courant quand en début de chemin)."
 ---

@@ -15,7 +15,7 @@ keypoints:
 - "L'extension normale pour les programmes Python est `.py`, par exemple `nomDuFichier.py`."
 - "Un programme Python s'exécute avec `python3 nomDuFichier.py`."
 - "En Python, `print(…)` permet de produire une sortie qui sera affichée dans le terminal."
-- "La plupart des espaces (caractère ` `) sont insignifiant, sauf en début de ligne."
+- "La plupart des espaces (caractère ` `) sont insignifiant, sauf en début de ligne."
 - "Du « texte » est aussi appelé une « chaîne de caractères » ou *string* (en anglais)."
 - "En Python, `len(…)` permet d'obtenir la longueur d'une chaîne de caractères (le nombre de caractères qu'elle contient)."
 - "En Python, une chaîne de caractère doit être entre guillemets."

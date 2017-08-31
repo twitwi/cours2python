@@ -35,8 +35,8 @@ Dans ce cours, l'objectif est de se concentrer sur l'apprentissage de la program
 Au delà de la programmation (écriture du programme), nous serons amenés à nous poser certaines questions fondamentales comme :
 - Quelle information représenter ?
 - Comment stocker/représenter cette information ?
-- Quelle est la tâche, que veut on faire de ces informations ?
-- Quel algorithme permet de résoudre cette tâche ?
+- Quelle est la tâche : que veut on faire de ces informations ?
+- Quel algorithme permet de résoudre cette tâche ? Existe-t-il ou faut il l'inventer ?
 
 
 ## Pourquoi enseigner l'informatique à tous
