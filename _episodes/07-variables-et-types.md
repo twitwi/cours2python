@@ -19,3 +19,25 @@ keypoints:
 - "Il est cependant primordial de choisir des noms de variables pertinents pour aider à la (re)lecture du programme."
 - "Un programme est écrit pour être compris à la fois par l'ordinateur et par l'humain."
 ---
+
+Exemple de programme illustrant en partie les variables et types :
+
+~~~python
+print("Bonjour")
+
+a = "Hello"
+print(a)
+print(type(a))
+
+un_entier = 123
+print(un_entier)
+print(type(un_entier))
+
+truc = 18.5
+print(truc, type(truc))
+
+truc = "Une « string » (chaîne de caractère)"
+print(truc)
+print(type(truc))
+~~~
+{:code}

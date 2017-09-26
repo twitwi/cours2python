@@ -18,3 +18,4 @@ keypoints:
 - "Les erreurs sont souvent du même type et il devient de plus en plus facile de comprendre les messages d'erreur."
 - "Quand un message d'erreur est relativement original, il est possible de le copier coller dans un moteur de recherche pour trouver des pistes de solution."
 ---
+

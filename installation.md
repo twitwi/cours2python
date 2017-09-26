@@ -19,12 +19,12 @@ permalink: /installation/
 
 # Installation pour un système d'exploitation Windows
 
-Des [vidéos][playlist] sont disponible pour illustrer l'installation.
+Des 🎥 [vidéos][playlist] sont disponible pour illustrer l'installation.
 Des liens vers des vidéos spécifiques sont disponibles ci dessous.
 
 ## Interpréteur de commande Bash sous Windows
 
-Vidéos : [Version-Windows], [Installer-Gitbash].
+🎥 Vidéos : [Version-Windows], [Installer-Gitbash].
 
 Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.9.3.windows.1/Git-2.9.3-64-bit.exe)).
 
@@ -36,7 +36,7 @@ Il est fortement recommandé de lire alors [les trucs et astuces bash]({{page.ro
 ## Python3 sous Windows (avec Anaconda, ok pour Windows, MacOS, Linux)
 {: #anaconda}
 
-Vidéos : [Version-Windows], [Installer-Python].
+🎥 Vidéos : [Version-Windows], [Installer-Python].
 
 Note: l'installation peut prendre presque 500Mo sur votre disque dur.
 
@@ -46,6 +46,8 @@ Note: l'installation peut prendre presque 500Mo sur votre disque dur.
 
 Il faut télécharger et installer le programme suivant : <https://www.continuum.io/downloads>
 Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) et à *Python3.5* (nous voulons Python3 pas <strike>Python2</strike>).
+
+Si, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
 
 <!--
 Déconnectez vous et reconnectez vous (ou redémarrez l'ordinateur).
@@ -70,7 +72,7 @@ Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus s
 
 ### Emacs sous Windows
 
-Vidéos : [Installer-Emacs].
+🎥 Vidéos : [Installer-Emacs].
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
@@ -81,7 +83,7 @@ Pour utiliser emacs, il vous faut d'abord l'installer :
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
 Lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
 
-Vidéos : [Configurer-Emacs], [Configurer-Bash].
+🎥 Vidéos : [Configurer-Emacs], [Configurer-Bash].
 
 
 # Installation pour un système d'exploitation Mac
@@ -153,6 +155,71 @@ Par exemple avec :
     sudo apt-get install emacs
 
 
+-----------------------
+
+# Bash ne trouve pas Python {#bashaliaspython}
+
+*cette section est une discussion qui donne une solution (en utilisant l'éditeur Atom, mais la même chose peut être faite avec emacs ou autre).*
+
+
+<blockquote markdown="1">
+> …après avoir téléchargé anaconda3, je n'arrive pas à obtenir une réponse comme dans votre vidéo lorsque vous vous mettez « `python --version` » dans Bash (cela me dit qu'il ne connaît rien à ce nom).
+> Lors de l'installation dans votre vidéo, vous cochez « add anaconda to my path environment variable », ce que je n'avais pas fais, car sur mon ordinateur il m'avait été marqué que cela était fortement déconseillé.
+
+Effectivement, cela semble maintenant déconseillé.
+
+> Est ce que cela a un rapport ?
+
+Oui, c'est pour cela que python n'est pas trouvé. 
+
+> Comment dois je m'y prendre ?
+
+Dans l'idée : nous allons dire à l’interpréteur de commande « bash » que quand tu tapes « python » ou « python3 » cela veut dire `C:\......\python` (le chemin complet vers l'endroit ou python a été installé). Il exécutera donc le programme python installé dès que tu tapes `python3` ou `python`.
+
+Voilà comment faire.
+
+**1)** Tout d'abord il faut trouver où Ananconda a été installé. Dans mon exemple c'est dans « `C:\Users\IEUser\Anaconda3` ».
+Il faut utiliser l'explorateur de fichier windows pour aller dans C: ou dans ton compte utilisateur pour trouver le dossier Anaconda.
+Une fois trouvé, il faut copier ou noter le chemin. Le chemin est accessible en cliquant sur l'icône de dossier dans la barre d'adresse (voir http://grenier.self-access.com/access/le-saviez-vous/copier-un-chemin-windows-rapidement/).
+
+
+**2)** Maintenant, nous allons créer un fichier de configuration vide.
+Il faut lancer « gitbash » et exécuter les deux commandes suivantes (je mets en commentaire ce que cela fait).
+
+~~~bash
+cd                    # revenir à la racine de ton compte utilisateur (pour être sûr)
+touch .bash_profile   # créer, s'il n'existe pas, le fichier « .bash_profile »
+                      # (avec le point au début) qui sert de configuration à bash
+~~~
+
+**3)** Maintenant il faut lancer ton éditeur de texte (atom ? depuis le menu « démarrer »),
+puis ouvrir le fichier « `.bash_profile` » avec le menu ou Ctrl+O (touche « control » et touche « o »), la principale difficulté est de trouver où le fichier est, en gros dans ton dossier utilisateur, le chemin est par exemple `C:\Users\TonUtilisateur\`
+
+À l'aide de l'éditeur (atom), nous allons ajouter des choses dans le fichier (qui est possiblement vide à ce point).
+Il faut ajouter les lignes suivantes :
+
+~~~bash
+alias python='C:/Users/IEUser/Anaconda3/python'
+alias python3=python
+~~~
+
+Important : dans la première ligne,
+- il y a des guillemets (apostrophe) autours du chemin
+- le chemin est celui trouvé à l'étape 1), il sera différent pour toi
+- les « \ » doivent être remplacé par des « / »
+- le chemin est celui d'anaconda, auquel on a ajouté « /python » à la fin
+
+Bien penser à sauvegarder le fichier.
+
+
+**4)** Ça y est. Chaque terminal `bash` démarré à partir de ce moment permettra normalement d'utiliser « `python` » ou « `python3` ».
+Lancer un nouveau terminal et taper « `python3 --version` »
+</blockquote>
+
+-----------------------
+
+
+-----------------------
 
 
 [playlist]: https://www.youtube.com/playlist?list=PLWR7ZHocfRYasFN8GRihwyu__grY0be_s
