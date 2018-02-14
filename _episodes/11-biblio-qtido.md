@@ -35,11 +35,11 @@ from qtido import *
 f = creer(800, 600)
 t = creer_tortue(f)
 
-t.tortue_avance(100)
-t.tortue_droite(120)
-t.tortue_avance(100)
-t.tortue_droite(120)
-t.tortue_avance(100)
+tortue_avance(t, 100)
+tortue_droite(t, 120)
+tortue_avance(t, 100)
+tortue_droite(t, 120)
+tortue_avance(t, 100)
 ~~~
 {: .source}
 
@@ -59,12 +59,12 @@ t.tortue_avance(100)
 > > f = creer(800, 600)
 > > t = creer_tortue(f)
 > > 
-> > t.tortue_avance(40)
-> > t.tortue_droite(90)
-> > t.tortue_avance(30)
+> > tortue_avance(t, 40)
+> > tortue_droite(t, 90)
+> > tortue_avance(t, 30)
 > > a = 90 + math.degrees(math.acos(40 / 50))
-> > t.tortue_droite(a)
-> > t.tortue_avance(50)
+> > tortue_droite(t, a)
+> > tortue_avance(t, 50)
 > > ~~~
 > > {: .source}
 > {: .solution}

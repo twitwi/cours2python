@@ -23,7 +23,7 @@ Ces micro-modules sont classés dans l'ordre recommandé de lecture, mais il est
 
 ## Cours associés
 
-Ce site sert, entre autre, de référence et de complément pour certains cours universitaires ()dispensés à l'université Jean Monnet de Saint Étienne).
+Ce site sert, entre autre, de référence et de complément pour certains cours universitaires (dispensés à l'université Jean Monnet de Saint Étienne).
 Les épisodes marqués `〚Cours〛` correspondent en fait à une description de ces cours.
 Voici les cours concernés :
 

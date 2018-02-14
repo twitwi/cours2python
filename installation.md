@@ -131,13 +131,16 @@ Vous pouvez très probablement utiliser votre gestionnaire de paquets.
 Il suffit d'installer les paquets suivants :
 
 - python3
-- python3-pyqt4
-- python3-tk
+- python3-pyqt5
 - python3-numpy
 
 Avec certains gestionnaires de paquets cela peut se faire avec la commande :
 
-    sudo apt-get install python3 python3-pyqt4 python3-tk python3-numpy
+    sudo apt-get install python3 python3-pyqt5 python3-numpy
+
+Il peut aussi être nécessaire de lancer ensuite la commande (si vous avez un crash inhabituel quand vous lancer un programme utilisant qtido) :
+
+    sudo pip3 install pyqt5
 
 Si votre gestionnaire de paquets ne vous permet pas l'installation des choses ci-dessus, se reporter aux instructions "Anaconda".
 
