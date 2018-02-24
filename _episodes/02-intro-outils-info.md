@@ -35,7 +35,7 @@ Dans ce cours, l'objectif est de se concentrer sur l'apprentissage de la program
 Au delà de la programmation (écriture du programme), nous serons amenés à nous poser certaines questions fondamentales comme :
 - Quelle information représenter ?
 - Comment stocker/représenter cette information ?
-- Quelle est la tâche : que veut on faire de ces informations ?
+- Quelle est la tâche : que veut on faire de cette information ?
 - Quel algorithme permet de résoudre cette tâche ? Existe-t-il ou faut il l'inventer ?
 
 
@@ -48,5 +48,3 @@ Serge Abiteboul donne les motivations suivante pour enseigner/apprendre l'inform
 - Pour pouvoir créer, en s'appuyant sur de nouvelles techniques.
 - Pour avoir une chance de faire avancer la recherche (dans la plupart des sciences).
 - Pour avoir une chance de participer à l'innovation dans des pans entiers de l'industrie.
-
-
