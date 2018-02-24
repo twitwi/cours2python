@@ -2,7 +2,6 @@
 layout: page
 title: "Licences"
 permalink: /license/
-root: .
 ---
 
 Ce site utilise la template proposée par Software Carpentry et certains éléments se basent sur le contenu de leurs lessons.
