@@ -9,7 +9,7 @@ permalink: /installation/
 > - **bash** comme interpréteur de ligne de commande (ou *shell*), qui sert à lancer d'autres commandes et programmes (par exemple, ls pour lister les fichiers, python3 pour exécuter un programme python),
 > - **python3** pour exécuter les programmes écrits dans le langage Python,
 > - **emacs** pour éditer des fichiers textes bruts (par exemple des programmes python, des fichiers de compte rendus),
-> - différentes bibliothèques Python (pour les calculs avancés et le dessin dans des fenêtres).
+> - différentes bibliothèques Python (pour les calculs avancés, le tracé de courbes, le dessin dans des fenêtres, ...).
 > - la bibliothèque « fait maison » *qtido* qui elle même utilise une bibliothèque plus classique appelée Qt.
 {: .checklist}
 
@@ -17,58 +17,47 @@ permalink: /installation/
 {: .number-h2}
 
 
-# Installation pour un système d'exploitation Windows
+# Installation pour un système d'exploitation **Windows**
 
 Des 🎥 [vidéos][playlist] sont disponible pour illustrer l'installation.
 Des liens vers des vidéos spécifiques sont disponibles ci dessous.
 
-## Interpréteur de commande Bash sous Windows
+## Interpréteur de commande **Bash** sous Windows
 
 🎥 Vidéos : [Version-Windows], [Installer-Gitbash].
 
-Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.9.3.windows.1/Git-2.9.3-64-bit.exe)).
+Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe)).
 
+Acceptez tous le choix par défaut lors de l'installation.
 Une fois le programme installé, vous pouvez faire « click bouton droit » dans un dossier puis cliquer sur « Git Bash » dans le menu déroulant, pour lancer un terminal executant « bash ».
 
-Il est fortement recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-bashtips/).
+Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-bashtips/).
 
 
-## Python3 sous Windows (avec Anaconda, ok pour Windows, MacOS, Linux)
-{: #anaconda}
+## **Python3** sous Windows
+{: #pywin}
 
-🎥 Vidéos : [Version-Windows], [Installer-Python].
+🎥 Vidéos : [Version-Windows].
 
 Note: l'installation peut prendre presque 500Mo sur votre disque dur.
 
-<!--
-**ATTENTION :** il y a un problème avec le dernier ananconda, il faut donc installer un « ancien » ananconda, sur <https://repo.continuum.io/archive/> prendre Un fichier qui commence par `Anaconda3-4.1.1-`  (attention à bien prendre `Anaconda3` et la version `4.1.1`, et la plateforme (windows 32 vs 64) qui vous corresponde).
--->
+Nous allons utiliser l'installateur fourni par le projet Python.
+Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-370/) ou [directement (64bits)](https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe).
 
-Il faut télécharger et installer le programme suivant : <https://www.continuum.io/downloads>
+Important : lors de l'installation, **cochez la case « add Python 3.7 to path »** avant de clicker sur « install now ».
+
+Une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
+Il faut télécharger et installer le programme suivant : <https://www.anaconda.com/download/>
 Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) et à *Python3.5* (nous voulons Python3 pas <strike>Python2</strike>).
 
 Si, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
 
-<!--
-Déconnectez vous et reconnectez vous (ou redémarrez l'ordinateur).
+Ensuite, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip).
 
-Ensuite, ouvrez un "terminal" (voir ci dessus si vous êtes sous windows) et tapez la commande suivante pour installer des bibliothèques nécessaires (cela peut prendre du temps) :
-
-    conda install numpy pyqt
--->
-
-## Éditeur de texte sous Windows
+## **Éditeur** de texte sous Windows
 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
 Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus simples à installer.
-
-### Alternatives à Emacs
-{: #alteditor}
-
-À la place d'emacs, il est possible d'utiliser, pour éditer du Python :
-
-- [https://atom.io/](https://atom.io/), un éditeur léger et rapide,
-- [PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux), en version gratuite « community », un éditeur complet et plein de fonctionalités.
 
 ### Emacs sous Windows
 
@@ -85,8 +74,17 @@ Lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoi
 
 🎥 Vidéos : [Configurer-Emacs], [Configurer-Bash].
 
+### Alternatives à Emacs
+{: #alteditor}
 
-# Installation pour un système d'exploitation Mac
+À la place d'emacs, il est possible d'utiliser, pour éditer du Python :
+
+- [https://atom.io/](https://atom.io/), un éditeur léger et rapide,
+- [PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux), en version gratuite « community », un éditeur complet et plein de fonctionalités.
+- Spyder, qui peu s'installer après avoir installé python avec la commande `pip3 install spyder`
+
+
+# Installation pour un système d'exploitation **Mac**
 
 ## Interpréteur de commande Bash sous Mac
 
@@ -95,7 +93,7 @@ Il suffit de trouver comment lancer un "terminal" depuis votre Mac.
 
 ## Python3 sous Mac
 
-Il est recommandé de suivre les instructions « [Python3 sous Windows](#anaconda) ».
+Il est recommandé de suivre les instructions « [Python3 sous Windows](#pywin) ».
 
 ## Éditeur de texte sous Mac
 
@@ -106,14 +104,49 @@ Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#a
 
 Suivez les instructions (en anglais) sur [http://wikemacs.org/wiki/Installing_Emacs_on_OS_X](http://wikemacs.org/wiki/Installing_Emacs_on_OS_X) et demander de l'aide à vos enseignants en cas de problème.
 
+-----------------------
+-----------------------
+-----------------------
+
+# Installation de bibliothèques pythons
+{: #bibpip}
+
+Voici une liste de commande qui permettent d'installer différents outils et bibliothèques Python utilisée dans les cours ou qui peuvent être utiles.
+Les commandes suivantes, lancées dans un terminal, permettent de télécharger et installer des bibliothèques.
+
+~~~
+pip install pyqt5          # pour qtido
+
+pip install numpy          # pour le cours de L2 CHI/SPI
+pip install matplotlib
+
+pip install jupyter        # pour les "cahiers de laboratoire"
+pip install spyder         # éditeur/interpréteur python
+pip install graphviz       # pour l'outil pytoroad.py
+~~~
+
+Selon votre installation, il se peut que vous deviez utiliser `pip3` au lieu de `pip`.
+Si vous avez utilisé "anaconda", vous pouvez devoir utiliser le gestionnaire de bibliothèque intégré `conda`.
+
+En cas de problème avec pip, tenter :
+
+~~~
+python -m pip install --upgrade pip
+pip install certifi
+~~~
+
 
 
 
 -----------------------
+-----------------------
+-----------------------
+-----------------------
+-----------------------
 
 
 
-# Installation pour un système d'exploitation Linux
+# Installation pour un système d'exploitation **Linux**
 
 ## Interpréteur de commande Bash sous Linux
 
@@ -121,9 +154,6 @@ Il est installé par défaut.
 Il suffit de trouver comment lancer un "terminal" depuis votre Linux.
 
 ## Python3 (Linux)
-
-Vous pouvez suivre les même instructions que « [Python3 sous Windows](#anaconda) ».
-Ou alors, vous pouvez suivre les instructions ci-dessous.
 
 Le cours utilise python en version 3.
 Il faut donc installer cette version.
@@ -142,7 +172,7 @@ Il peut aussi être nécessaire de lancer ensuite la commande (si vous avez un c
 
     sudo pip3 install pyqt5
 
-Si votre gestionnaire de paquets ne vous permet pas l'installation des choses ci-dessus, se reporter aux instructions "Anaconda".
+Si votre gestionnaire de paquets ne vous permet pas l'installation des choses ci-dessus, se reporter aux instructions « [Python3 sous Windows](#pywin) ».
 
 
 ## Éditeur de texte sous Linux
@@ -181,7 +211,7 @@ Dans l'idée : nous allons dire à l’interpréteur de commande « bash » que 
 
 Voilà comment faire.
 
-**1)** Tout d'abord il faut trouver où Ananconda a été installé. Dans mon exemple c'est dans « `C:\Users\IEUser\Anaconda3` ».
+**1)** Tout d'abord il faut trouver où Anaconda a été installé. Dans mon exemple c'est dans « `C:\Users\IEUser\Anaconda3` ».
 Il faut utiliser l'explorateur de fichier windows pour aller dans C: ou dans ton compte utilisateur pour trouver le dossier Anaconda.
 Une fois trouvé, il faut copier ou noter le chemin. Le chemin est accessible en cliquant sur l'icône de dossier dans la barre d'adresse (voir http://grenier.self-access.com/access/le-saviez-vous/copier-un-chemin-windows-rapidement/).
 
@@ -231,7 +261,7 @@ Lancer un nouveau terminal et taper « `python3 --version` »
 [Installer-Emacs]: https://www.youtube.com/watch?v=aPaHAj5Cdq8
 [Configurer-Emacs]: https://www.youtube.com/watch?v=5owlbwRooOw
 [Configurer-Bash]: https://www.youtube.com/watch?v=SvizCWdP2RU
-[Installer-Python]: https://www.youtube.com/watch?v=5UfzrZWtxVk
+[Installer-Python-Anaconda]: https://www.youtube.com/watch?v=5UfzrZWtxVk
 
 -----------------------
 
