@@ -6,3 +6,6 @@
 __pycache__
 _site
 single-page.md
+.Rproj.user
+.Rhistory
+.RData
