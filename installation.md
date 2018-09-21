@@ -65,9 +65,8 @@ Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus s
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
-- Télécharger <http://ftp.gnu.org/gnu/emacs/windows/emacs-24.5-bin-i686-mingw32.zip> . <!--http://ftp.gnu.org/gnu/emacs/windows/emacs-24.3-bin-i386.zip> .-->
-- Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
-- Aller dans le dossier `emacs-24.3/bin` et double clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
+- Télécharger <http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.1-i686.zip> . - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Aller dans le dossier `emacs-26.1-i686/bin` et double clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
 
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
 Lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
@@ -203,7 +202,7 @@ Effectivement, cela semble maintenant déconseillé.
 
 > Est ce que cela a un rapport ?
 
-Oui, c'est pour cela que python n'est pas trouvé. 
+Oui, c'est pour cela que python n'est pas trouvé.
 
 > Comment dois je m'y prendre ?
 
@@ -267,6 +266,3 @@ Lancer un nouveau terminal et taper « `python3 --version` »
 
 
 -----------------------
-
-
-
