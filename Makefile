@@ -21,6 +21,10 @@ commands :
 docker-serve :
 	docker run --rm -it -v ${PWD}:/srv/jekyll -p 127.0.0.1:4000:4000 jekyll/jekyll:${JEKYLL_VERSION} make serve
 
+## docker-site      : use docket to build files without running a server.
+docker-site :
+	docker run --rm -it -v ${PWD}:/srv/jekyll -p 127.0.0.1:4000:4000 jekyll/jekyll:${JEKYLL_VERSION} make site
+
 ## serve            : run a local server.
 serve : lesson-md
 	${JEKYLL} serve
