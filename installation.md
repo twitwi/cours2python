@@ -173,6 +173,10 @@ Il peut aussi être nécessaire de lancer ensuite la commande (si vous avez un c
 
 Si votre gestionnaire de paquets ne vous permet pas l'installation des choses ci-dessus, se reporter aux instructions « [Python3 sous Windows](#pywin) ».
 
+### Python3 sur Raspberry Pi
+
+Le Raspberry Pi est en fait un ordinateur sous Linux.
+Vérifiez que le Raspberry Pi a bien accès à internet et suivez les instructions pour Linux (juste au dessus).
 
 ## Éditeur de texte sous Linux
 
