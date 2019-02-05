@@ -25,14 +25,6 @@ En supposant que `f` est une fenêtre graphique (retournée par la fonction `cre
 Le premier paramètre est toujours la fenêtre concernée par l'opération.
 La bibliothèque accepte la plupart du temps des valeurs de coordonnées non entières (par exemple 10.5).
 
-### Fonctions relatives à la tortue
-
-- `creer_tortue(f)` : Crée une tortue pour tracer dans la fenêtre `f`. Renvoie la tortue créée.
-- `tortue_avance(t, d)` : Ordonne à la tortue d'avancer de `d` pixels.
-- `tortue_droite(t, da)` : Ordonne à la tortue de tourner vers la droite d'un angle de `da` degrés.
-- `tortue_gauche(t, da)` : Ordonne à la tortue de tourner vers la gauche d'un angle de `da` degrés.
-- `tortue_stop(t)` : Ordonne à la tortue de lever le stylo (d'arrêter de tracer).
-- `tortue_trace(t)` : Ordonne à la tortue d'abaisser le stylo (de recommencer à tracer).
 
 ### Fonctions d'affichage simple
 
@@ -56,8 +48,8 @@ Et d'autres fonctions d'affichage.
 
 Et encore d'autres fonctions plus avancées.
 
-- `polygone(f, liste_points)` : 
-- `polyligne(f, liste_points)` : 
+- `polygone(f, liste_points)` : Trace un polygone à partir d'une liste de points (x, y) (n-uplet ou liste à deux éléments).
+- `polyligne(f, liste_points)` : Comme polygone mais en ne traçant que le contour.
 - `utiliser_transformation(f, tx, ty, sx=1, sy=1, r=0)` : Change la transformation utilisée pour le tracer. Tout les tracés auront une translation de (`tx`,`ty`), un étirement horizontal de `sx` et vertical de `sy`, et enfin une rotation de `r` degrés.
 - `annuler_transformation(f)` : Remet la transformation à sa valeur par défaut. Cette fonction est aussi automatiquement appelée par `effacer(…)`.
 
@@ -83,9 +75,9 @@ Les « widgets » (boutons, champ textes, etc.), une fois ajoutés à une fen�
 Il faut donc ajouter un widget juste après avoir créer la fenêtre et non pas à chaque fois que l'on ré-affiche son contenu.
 Les fonctions d'ajout prennent des coordonnées (x1, y1, x2, y2) qui correspondent au rectangle que doit occuper le widget.
 
-- `ajouter_bouton(f, ev, x1, y1, x2, y2, texte)` : Crée un bouton avec `texte` marqué dessus. Quand ce bouton est clické, l'événement `ev` sera émis.
-- `ajouter_slider(f, ev , x1, y1, x2, y2, v_min, v_max)` : Ajoute durablement . `v_min` et `v_max` sont inclus, il y a donc `v_max - v_min + 1` valeurs possibles.
-- `ajouter_champ_texte(f, ev , x1, y1, x2, y2)` : Crée un bouton avec `texte` marqué dessus. Quand le texte change, l'événement `ev` sera émis.
+- `ajouter_bouton(f, ev, x1, y1, x2, y2, texte)` : Crée un bouton avec `texte` marqué dessus. Quand ce bouton est clické, l'événement `ev` est émis.
+- `ajouter_slider(f, ev , x1, y1, x2, y2, v_min, v_max)` : Crée un slider (glissière) pour choisir une valeur entière entre  `v_min` et `v_max` (inclus), il y a donc `v_max - v_min + 1` valeurs possibles. Quand la valeur change, l'événement `ev` est émis.
+- `ajouter_champ_texte(f, ev , x1, y1, x2, y2)` : Crée un champ texte pré-rempli avec `texte`. Quand le texte change, l'événement `ev` est émis.
 - `ajouter_zone_texte(f, ev , x1, y1, x2, y2)` : Comme le champ texte mais crée une zone où il est possible de taper plusieurs lignes.
 - `supprime_widgets(f)` : Supprime tous les widgets de la fenêtre.
 
@@ -94,7 +86,16 @@ Quand un widget contient une valeur (tous sauf les boutons), il est possible d'a
 - `lire_slider(f, ev)` : Renvoie la valeur, sous forme d'un entier, du slider associé à l'événement `ev`.
 - `lire_champ_texte(f, ev)` : Renvoie la valeur, sous forme d'une chaîne de caractères, du champ texte associé à l'événement `ev`.
 - `lire_zone_texte(f, ev)` : Renvoie la valeur, sous forme d'une chaîne de caractères, de la zone de texte associée à l'événement `ev`.
-- `changer_slider(f, ev, value)` : Change la valeur du slider associé à l'événement `ev`. Le paramètre `val` doit être un entier.
+- `changer_slider(f, ev, val)` : Change la valeur du slider (glissière) associé à l'événement `ev`. Le paramètre `val` doit être un entier.
 - `changer_champ_texte(f, ev, val)` : Change le contenu du champ texte associé à l'événement `ev`. Le paramètre `val` doit être une chaîne de caractères.
 - `changer_zone_texte(f, ev, val)` : Change le contenu de la zone de texte associée à l'événement `ev`. Le paramètre `val` doit être une chaîne de caractères.
 
+
+### Fonctions relatives à la tortue
+
+- `t = creer_tortue(f)` : Crée une tortue pour tracer dans la fenêtre `f`. Renvoie la tortue créée (et la stocke ici dans `t`).
+- `tortue_avance(t, d)` : Ordonne à la tortue d'avancer de `d` pixels.
+- `tortue_droite(t, da)` : Ordonne à la tortue de tourner vers la droite d'un angle de `da` degrés.
+- `tortue_gauche(t, da)` : Ordonne à la tortue de tourner vers la gauche d'un angle de `da` degrés.
+- `tortue_stop(t)` : Ordonne à la tortue de lever le stylo (d'arrêter de tracer).
+- `tortue_trace(t)` : Ordonne à la tortue d'abaisser le stylo (de recommencer à tracer).
