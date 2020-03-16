@@ -19,7 +19,7 @@ commands :
 
 ## docker-serve     : use docker to build the site
 docker-serve :
-	docker run --rm -it -v ${PWD}:/srv/jekyll -p 127.0.0.1:4000:4000 jekyll/jekyll:${JEKYLL_VERSION} make serve
+	docker run --rm -it -v ${PWD}:/srv/jekyll -p 127.0.0.1:4000:4000 -p 127.0.0.1:35729:35729 jekyll/jekyll:${JEKYLL_VERSION} make serve
 
 ## docker-site      : use docket to build files without running a server.
 docker-site :
@@ -27,7 +27,8 @@ docker-site :
 
 ## serve            : run a local server.
 serve : lesson-md
-	${JEKYLL} serve
+	echo '############# .............'
+	${JEKYLL} serve --livereload
 
 ## site             : build files but do not run a server.
 site : lesson-md

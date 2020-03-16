@@ -17,6 +17,8 @@ Pour tester les changements, il faut **lancer un nouveau terminal**.
 
 ## Configurer Emacs dans Bash sous Windows
 
+<span class="ico-vid">🎥</span> Vidéos : [Configurer-Emacs].
+
 Pour pouvoir ouvrir emacs depuis le terminal en tapant juste `emacs`, il va falloir créer/modifier le fichier `~/.bash_profile`.
 
 Pour cela (on suppose emacs installé) :
@@ -38,14 +40,17 @@ pwd
 - dans le emacs que vous aviez gardé ouvert, ajouter la ligne suivante
 
 ```
-alias emacs='C:/Users/Bob/.../runemacs.exe'
+alias emacs='/c/Users/Bob/.../runemacs.exe'
 ```
 
 - Important : remplacer le chemin par celui que vous venez de copier
 - Important : remplacer aussi les `\` par `/`
+- Important : remplacer aussi le `C:` du début par `/c` (en minuscule)
 - NB : penser à sauvegarder ensuite
 
 ## Lancer python 3 avec `python3` dans bash
+
+<span class="ico-vid">🎥</span> Vidéos : [Configurer-Bash].
 
 Si anaconda est installé, il est possible de lancer python depuis le terminal bash avec `python`.
 Pour pouvoir le lancer en tapant `python3` (pour faire comme en salle de TP), il est possible d'ajouter dans le fichier `.bash_profile` la ligne suivante:
@@ -66,3 +71,15 @@ Pour que cp/mv/ls demandent (par défaut) avant d'écraser un fichier existant, 
     alias rm='rm -i'
     alias cp='cp -i'
     alias mv='mv -i'
+
+
+
+-----------------------------------------------
+<style>
+.ico-vid { font-size: 200%; }
+</style>
+-----------------------------------------------
+-----------------------------------------------
+
+[Configurer-Emacs]: https://www.youtube.com/watch?v=5owlbwRooOw
+[Configurer-Bash]: https://www.youtube.com/watch?v=SvizCWdP2RU

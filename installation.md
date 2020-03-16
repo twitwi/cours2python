@@ -17,16 +17,28 @@ permalink: /installation/
 {: .number-h2}
 
 
+
+# Utiliser Python dans un navigateur, sans rien installer
+
+Cette solution **ne fonctionne que pour les bases** de Python, certaines bibliothèques (comme qtido) ne seront pas disponibles.
+Cette solution est donc **insuffisante pour certains TD/TP**.
+
+Solution 1, le site de Python permet de [lancer un interpreteur](https://www.python.org/shell/) pour faire des essais de manière interactive.
+Python est exécuté sur un serveur (un autre ordinateur) qui est fourni gratuitement, il se peut donc que ce service ne fonctionne pas, selon le nombre de personnes l'utilisant.
+
+Solution 2, le site du projet Brython donne un [éditeur Python](https://brython.info/tests/editor.html?lang=fr) (et une [console interactive](https://brython.info/tests/console.html?lang=fr)).
+Python est ici transformé (compilé) pour être exécuté localement dans votre navigateur web.
+
 # Installation pour un système d'exploitation **Windows**
 
-Des 🎥 [vidéos][playlist] sont disponible pour illustrer l'installation.
+Des <span class="ico-vid">🎥</span> [vidéos][playlist] sont disponible pour illustrer l'installation.
 Des liens vers des vidéos spécifiques sont disponibles ci dessous.
 
 ## Interpréteur de commande **Bash** sous Windows
 
-🎥 Vidéos : [Version-Windows], [Installer-Gitbash].
+<span class="ico-vid">🎥</span> Vidéos : [Version-Windows], [Installer-Gitbash].
 
-Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe)).
+Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-64-bit.exe) (ou [32bits](https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-32-bit.exe)).
 
 Acceptez tous le choix par défaut lors de l'installation.
 Une fois le programme installé, vous pouvez faire « click bouton droit » dans un dossier puis cliquer sur « Git Bash » dans le menu déroulant, pour lancer un terminal executant « bash ».
@@ -37,22 +49,22 @@ Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-
 ## **Python3** sous Windows
 {: #pywin}
 
-🎥 Vidéos : [Version-Windows].
+<span class="ico-vid">🎥</span> Vidéos : [Version-Windows].
 
-Note: l'installation peut prendre presque 500Mo sur votre disque dur.
+Note: l'installation peut prendre environ 500Mo sur votre disque dur.
 
 Nous allons utiliser l'installateur fourni par le projet Python.
-Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-370/) ou [directement (64bits)](https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe).
+Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-377/) ou [directement (64bits)](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe) (ou [32bits](https://www.python.org/ftp/python/3.7.7/python-3.7.7.exe)).
 
 Important : lors de l'installation, **cochez la case « add Python 3.7 to path »** avant de clicker sur « install now ».
 
-Une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
+**Si** cette solution ne marche pas, une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
 Il faut télécharger et installer le programme suivant : <https://www.anaconda.com/download/>
 Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) et à *Python3.5* (nous voulons Python3 pas <strike>Python2</strike>).
 
-Si, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
+**Si**, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
 
-Ensuite, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip).
+Ensuite, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip) par exemple pour utiliser qtido ou numpy.
 
 ## **Éditeur** de texte sous Windows
 
@@ -61,17 +73,17 @@ Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus s
 
 ### Emacs sous Windows
 
-🎥 Vidéos : [Installer-Emacs].
+<span class="ico-vid">🎥</span> Vidéos : [Installer-Emacs].
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
-- Télécharger <http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.1-i686.zip> . - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
-- Aller dans le dossier `emacs-26.1-i686/bin` et double clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
+- Télécharger [une archive zip (64bits)](http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-x86_64.zip) (ou [32bits](https://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Aller dans le dossier `emacs-26.3-i686/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
 
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
 Lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
 
-🎥 Vidéos : [Configurer-Emacs], [Configurer-Bash].
+<span class="ico-vid">🎥</span> Vidéos : [Configurer-Emacs], [Configurer-Bash].
 
 ### Alternatives à Emacs
 {: #alteditor}
@@ -193,7 +205,7 @@ Par exemple avec :
 
 -----------------------
 
-# Bash ne trouve pas Python {#bashaliaspython}
+# (ancien) Bash ne trouve pas Python {#bashaliaspython}
 
 *cette section est une discussion qui donne une solution (en utilisant l'éditeur Atom, mais la même chose peut être faite avec emacs ou autre).*
 
@@ -254,6 +266,10 @@ Lancer un nouveau terminal et taper « `python3 --version` »
 
 -----------------------
 
+
+<style>
+.ico-vid { font-size: 200%; }
+</style>
 
 -----------------------
 
