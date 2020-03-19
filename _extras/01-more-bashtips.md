@@ -43,6 +43,7 @@ pwd
 alias emacs='/c/Users/Bob/.../runemacs.exe'
 ```
 
+- Important : s'il y a un espace dans le chemin, utilisez plutôt `alias emacs='"/c/........."'`
 - Important : remplacer le chemin par celui que vous venez de copier
 - Important : remplacer aussi les `\` par `/`
 - Important : remplacer aussi le `C:` du début par `/c` (en minuscule)

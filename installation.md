@@ -20,7 +20,9 @@ permalink: /installation/
 
 # Utiliser Python dans un navigateur, sans rien installer
 
-Cette solution **ne fonctionne que pour les bases** de Python, certaines bibliothèques (comme qtido) ne seront pas disponibles.
+Solution 0, prendre le fichier `oijspy-v....html`  sur claroline connect, vous pouvez le télécharger et l'ouvrir localement dans votre navigateur, pour travailler sans internet.
+
+Les deux solutions ci dessous **ne fonctionne que pour les bases** de Python, certaines bibliothèques (comme qtido) ne seront pas disponibles.
 Cette solution est donc **insuffisante pour certains TD/TP**.
 
 Solution 1, le site de Python permet de [lancer un interpreteur](https://www.python.org/shell/) pour faire des essais de manière interactive.
@@ -33,6 +35,8 @@ Python est ici transformé (compilé) pour être exécuté localement dans votre
 
 Des <span class="ico-vid">🎥</span> [vidéos][playlist] sont disponible pour illustrer l'installation.
 Des liens vers des vidéos spécifiques sont disponibles ci dessous.
+
+
 
 ## Interpréteur de commande **Bash** sous Windows
 
@@ -58,13 +62,17 @@ Il peut être téléchargé via la page [page de téléchargement](https://www.p
 
 Important : lors de l'installation, **cochez la case « add Python 3.7 to path »** avant de clicker sur « install now ».
 
-**Si** cette solution ne marche pas, une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
-Il faut télécharger et installer le programme suivant : <https://www.anaconda.com/download/>
+<div style="color: #AAA">
+<p>
+<b>Si</b> cette solution ne marche pas, une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
+Il faut télécharger et installer le programme suivant : https://www.anaconda.com/download/
 Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) et à *Python3.5* (nous voulons Python3 pas <strike>Python2</strike>).
+</p>
+</div>
 
 **Si**, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
 
-Ensuite, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip) par exemple pour utiliser qtido ou numpy.
+**Ensuite**, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip) par exemple pour utiliser qtido ou numpy.
 
 ## **Éditeur** de texte sous Windows
 
