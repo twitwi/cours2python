@@ -14,6 +14,9 @@ Pour éditer ce fichier (si emacs est déjà configuré, cf « Configurer Emacs 
     emacs .bash_profile
 
 Pour tester les changements, il faut **lancer un nouveau terminal**.
+Autrement dit : **RELANCER gitbash** pour tester les changements
+
+
 
 ## Configurer Emacs dans Bash sous Windows
 
@@ -40,23 +43,59 @@ pwd
 - dans le emacs que vous aviez gardé ouvert, ajouter la ligne suivante
 
 ```
-alias emacs='/c/Users/Bob/.../runemacs.exe'
+alias emacs='"/c/Users/Bob/.../runemacs.exe"'
 ```
 
-- Important : s'il y a un espace dans le chemin, utilisez plutôt `alias emacs='"/c/........."'`
+- Important : si votre nom d'utilisateur est compliqué, remplacez `/c/Users/Bob/` par `$HOME/`
 - Important : remplacer le chemin par celui que vous venez de copier
 - Important : remplacer aussi les `\` par `/`
 - Important : remplacer aussi le `C:` du début par `/c` (en minuscule)
-- NB : penser à sauvegarder ensuite
+- NB : penser à **sauvegarder** ensuite
+- IMPORTANT : **RELANCER gitbash** pour tester les changements
 
-## Lancer python 3 avec `python3` dans bash
+
+
+
+## Lancer python 3 avec `python3` dans Bash
 
 <span class="ico-vid">🎥</span> Vidéos : [Configurer-Bash].
 
-Si anaconda est installé, il est possible de lancer python depuis le terminal bash avec `python`.
-Pour pouvoir le lancer en tapant `python3` (pour faire comme en salle de TP), il est possible d'ajouter dans le fichier `.bash_profile` la ligne suivante:
+Il faut préalablement avoir configuré Emacs dans Bash (c.f. ci dessus).
+Ouvrez alors le fichiers `.bash_profile` avec 
+
+    cd
+    emacs .bash_profile
+
+Pour pouvoir le lancer en tapant `python3` au lieu de `python` (pour faire comme en salle de TP), il faut ajouter dans le fichier `.bash_profile` la ligne suivante:
 
     alias python3=python
+
+- IMPORTANT : **RELANCER gitbash** pour tester les changements
+
+
+
+
+## Dire à bash d'utiliser le bon Python (permission denied, windowsapps)
+
+Il faut préalablement avoir configuré Emacs dans Bash (c.f. ci dessus).
+Ouvrez alors le fichiers `.bash_profile` avec 
+
+    cd
+    emacs .bash_profile
+
+Et ajoutez les lignes suivantes :
+
+    alias pip="python3 -m pip"
+    alias python3=python
+    alias python='"$HOME/AppData/Local/Programs/Python/Python37/python.exe"'
+
+- Important : adapter si besoin la dernière ligne avec le chemin d'installation de Python que vous avez noté précédemment
+- NB : penser à **sauvegarder** ensuite
+- IMPORTANT : **RELANCER gitbash** pour tester les changements
+
+
+
+
 
 
 ## Couleurs dans `ls`

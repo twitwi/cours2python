@@ -49,6 +49,22 @@ Une fois le programme installé, vous pouvez faire « click bouton droit » da
 
 Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-bashtips/).
 
+## Emacs sous Windows
+
+<span class="ico-vid">🎥</span> Vidéos : [Installer-Emacs].
+
+Pour utiliser emacs, il vous faut d'abord l'installer :
+
+- Télécharger [une archive zip (64bits)](http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-x86_64.zip) (ou [32bits](https://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Aller dans le dossier `emacs-26.3-i686/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
+
+Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
+Suivez « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
+
+<span class="ico-vid">🎥</span> Vidéos : [Configurer-Emacs], [Configurer-Bash].
+
+
+
 
 ## **Python3** sous Windows
 {: #pywin}
@@ -61,6 +77,7 @@ Nous allons utiliser l'installateur fourni par le projet Python.
 Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-377/) ou [directement (64bits)](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe) (ou [32bits](https://www.python.org/ftp/python/3.7.7/python-3.7.7.exe)).
 
 Important : lors de l'installation, **cochez la case « add Python 3.7 to path »** avant de clicker sur « install now ».
+**Copiez quelquepart** le chemin d'installation de Python.
 
 <div style="color: #AAA">
 <p>
@@ -70,28 +87,19 @@ Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) 
 </p>
 </div>
 
-**Si**, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » disent ne pas trouver Python, suivez « [bash ne trouve pas python](#bashaliaspython).
+**Si**, après l'installation et le démarrage d'un nouveau terminal (gitbash), les commandes « `python3 --version` » et « `python --version` » donnent un problème de droits (Permission Denied), lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir « dire à bash d'utiliser le bon Python ».
+
 
 **Ensuite**, vous pouvez ou devez (selon les cours) [installer des bibliothèques Python](#bibpip) par exemple pour utiliser qtido ou numpy.
 
-## **Éditeur** de texte sous Windows
+
+
+## Autres **Éditeur** de texte sous Windows
+
+(optionnel)
 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
-Vous pouvez aussi essayer d'autres éditeurs de textes, qui peuvent être plus simples à installer.
-
-### Emacs sous Windows
-
-<span class="ico-vid">🎥</span> Vidéos : [Installer-Emacs].
-
-Pour utiliser emacs, il vous faut d'abord l'installer :
-
-- Télécharger [une archive zip (64bits)](http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-x86_64.zip) (ou [32bits](https://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
-- Aller dans le dossier `emacs-26.3-i686/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
-
-Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
-Lire « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
-
-<span class="ico-vid">🎥</span> Vidéos : [Configurer-Emacs], [Configurer-Bash].
+Vous pouvez aussi essayer d'autres éditeurs de textes.
 
 ### Alternatives à Emacs
 {: #alteditor}
