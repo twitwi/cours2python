@@ -42,6 +42,7 @@ Et d'autres fonctions d'affichage.
 - `cadre(f, x1, y1, x2, y2)` : Comme `rectangle` mais trace uniquement le contour.
 - `disque(f, cx, cy, r)` : Rempli un disque centré en (cx,cy) et de rayon `r`.
 - `cercle(f, cx, cy, r)` : Comme `disque` mais trace uniquement le contour.
+- `grille_numpy(f, tab, pas, taille, x, y, couleur='greenred')` : Affiche un tableau numpy 2D sous forme de carrés de couleur, le premier carré étant en (x,y), les carrés ont la taille donnée et sont espacés avec un pas donné (par exemple, pas=taille). La couleur peut être une chaîne de caractères parmi `greenred`, `invgreen`, `red`, ou une fonction qui prend une valeur et renvoie un quadruplet (r,g,b,a).
 - `texte(f, g, b, taille, texte)` : Affiche la chaîne `texte` avec une taille de caractères de `taille` et avec le coin inférieur gauche de coordonnées (g, b).
 - `texte_centre(f, cx, b, taille, texte)` : Comme `texte` mais le texte est centré horizontalement autour du point (cx, b).
 - `epaisseur_du_trait(f, w)` : Définir l'épaisseur du stylo utilisé pour tracer les contours (cadre, cercle, ligne, etc.). L'épaisseur `w` est exprimée en nombre de pixels.
