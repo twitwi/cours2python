@@ -20,16 +20,41 @@ permalink: /installation/
 
 # Utiliser Python dans un navigateur, sans rien installer
 
-Solution 0, prendre le fichier `oijspy-v....html`  sur claroline connect, vous pouvez le télécharger et l'ouvrir localement dans votre navigateur, pour travailler sans internet.
+**Solution A** (uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
 
-Les deux solutions ci dessous **ne fonctionne que pour les bases** de Python, certaines bibliothèques (comme qtido) ne seront pas disponibles.
-Cette solution est donc **insuffisante pour certains TD/TP**.
-
-Solution 1, le site de Python permet de [lancer un interpreteur](https://www.python.org/shell/) pour faire des essais de manière interactive.
+Le site de Python permet de [lancer un interpreteur](https://www.python.org/shell/) pour faire des essais de manière interactive.
 Python est exécuté sur un serveur (un autre ordinateur) qui est fourni gratuitement, il se peut donc que ce service ne fonctionne pas, selon le nombre de personnes l'utilisant.
 
-Solution 2, le site du projet Brython donne un [éditeur Python](https://brython.info/tests/editor.html?lang=fr) (et une [console interactive](https://brython.info/tests/console.html?lang=fr)).
+**Solution B** (**hors ligne**, uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
+
+Le site du projet Brython donne un [éditeur Python](https://brython.info/tests/editor.html?lang=fr) (et une [console interactive](https://brython.info/tests/console.html?lang=fr)).
 Python est ici transformé (compilé) pour être exécuté localement dans votre navigateur web.
+
+**Solution C** (très **légère**, **hors ligne**, marche avec **qtido**, mais **pas numpy**) :
+
+Prendre le fichier `oijspy-v....html`  sur claroline connect, vous pouvez le télécharger et l'ouvrir localement dans votre navigateur, pour travailler sans internet.
+
+**Solution D** (pour **numpy**, mais **pas qtido**) :
+
+Plusieurs services qui fait tourner un jupyter notebook sur une machine quelque part et vous y donne accès.
+Un exemple est proposé par [le projet jupyter lui même](https://jupyter.org/try)
+
+**Solution E** (expérimental, pour **numpy**, mais **pas qtido**, potentiellement hors ligne) :
+
+Un projet en cours de développement (appelé [pyiodide](https://alpha.iodide.io/)) permet d'utiliser python qui fonctionne totalement dans le navigateur web, y compris avec numpy et matplotlib.
+Par exemple, allez sur [le notebook d'exemple](https://alpha.iodide.io/tryit?) et remplacer le contenu par votre programme (attention à bien garder le `%%py` car le notebook permet de mélanger python et d'autre langages), par exemple copiez ceci (et lancer le avec maj+entrée) :
+
+~~~py
+%% py
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 2, 200)
+plt.figure()
+plt.plot(x, x**2)
+plt.plot(x, x**0.5)
+plt.show()
+~~~
+
 
 # Installation pour un système d'exploitation **Windows**
 
