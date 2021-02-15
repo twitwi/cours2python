@@ -21,8 +21,9 @@ Pour ne pas vous perdre dans l'installation (certaines choses dépendent de votr
 1. **installer emacs** [voir ci dessous (windows)](#emacs) ou [(macos)](#emacsmacos)
 1. **installer gitbash** [voir ci dessous](#gitbash) (windows uniquement)
 1. **configurer emacs** dans un (nouveau) fichier de configuration bash [voir les trucs et astuces bash]({{page.root}}/more-bashtips/)
-1. **installer python** [voir ci dessous](#python)
+1. **installer python** [voir ci dessous](#pywin)
 1. **configurer python** dans bash [voir la section dédiée]({{page.root}}/more-bashtips/#bashpython)
+1. **installer des bibliothèques** (pyqt et/ou numpy etc) dans python [voir la section dédiée](#bibpip)
 1. **installer 7zip et le configurer dans bash** [voir la section dédiée]({{page.root}}/more-bashtips/#7zip) (windows uniquement)
 
 
@@ -71,7 +72,8 @@ Des liens vers des vidéos spécifiques sont disponibles ci dessous.
 
 
 
-## Interpréteur de commande **Bash** sous Windows <a id="gitbash">.</a>
+## Interpréteur de commande **Bash** sous Windows
+{: #gitbash}
 
 <span class="ico-vid">🎥</span> Vidéos : [Version-Windows], [Installer-Gitbash].
 
@@ -82,7 +84,8 @@ Une fois le programme installé, vous pouvez faire « click bouton droit » da
 
 Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-bashtips/).
 
-## Emacs sous Windows <a id="emacs"></a>
+## Emacs sous Windows
+{: #emacs}
 
 <span class="ico-vid">🎥</span> Vidéos : [Installer-Emacs].
 
@@ -99,7 +102,7 @@ Suivez « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouv
 
 
 
-## **Python3** sous Windows <a id="python"></a>
+## **Python3** sous Windows
 {: #pywin}
 
 <span class="ico-vid">🎥</span> Vidéos : [Version-Windows].
@@ -160,7 +163,8 @@ Il est recommandé de suivre les instructions « [Python3 sous Windows](#pywin) 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
 Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#alteditor) ».
 
-### Emacs (MacOS) <a id="emacsmacos"></a>
+### Emacs (MacOS)
+{: #emacsmacos}
 
 Suivez les instructions (en anglais) sur [http://wikemacs.org/wiki/Installing_Emacs_on_OS_X](http://wikemacs.org/wiki/Installing_Emacs_on_OS_X) et demander de l'aide à vos enseignants en cas de problème.
 

@@ -84,7 +84,8 @@ Pour pouvoir le lancer en tapant `python3` au lieu de `python` (pour faire comme
 - IMPORTANT : **RELANCER gitbash** pour tester les changements
 
 
-## Dire à bash d'utiliser le bon Python (permission denied, windowsapps) <a id="bashpython"></a>
+## Dire à bash d'utiliser le bon Python (permission denied, windowsapps)
+{: #bashpython}
 
 Il faut préalablement avoir configuré Emacs dans Bash (c.f. ci dessus).
 Ouvrez alors le fichier `.bash_profile` avec 
@@ -106,7 +107,8 @@ Et ajoutez les lignes suivantes (garder tel quel le `$HOME`, adaptez le `Python3
 
 
 
-## Installer et Configurer 7zip  <a id="7zip"></a>
+## Installer et Configurer 7zip
+{: #7zip}
 
 Le but est ici de pouvoir lancer la commande `zip` depuis le terminal, pour les rendus de TP.
 Vous pouvez télécharger 7zip depuis [la page de téléchargement de 7zip](https://www.7-zip.org/download.html), ou [directement, 64bits](https://www.7-zip.org/a/7z1900-x64.exe), ou [32bits](https://www.7-zip.org/a/7z1900.exe).
