@@ -16,6 +16,14 @@ permalink: /installation/
 >
 {: .number-h2}
 
+Pour ne pas vous perdre dans l'installation (certaines choses dépendent de votre système d'exploitation, de votre version si vous êtes sous windows etc), voici les **étapes typiques à suivre** :
+
+1. **installer emacs** [voir ci dessous (windows)](#emacs) ou [(macos)](#emacsmacos)
+1. **installer gitbash** [voir ci dessous](#gitbash) (windows uniquement)
+1. **configurer emacs** dans un (nouveau) fichier de configuration bash [voir les trucs et astuces bash]({{page.root}}/more-bashtips/)
+1. **installer python** [voir ci dessous](#python)
+1. **configurer python** dans bash [voir la section dédiée]({{page.root}}/more-bashtips/#bashpython)
+1. **installer 7zip et le configurer dans bash** [voir la section dédiée]({{page.root}}/more-bashtips/#7zip) (windows uniquement)
 
 
 # Utiliser Python dans un navigateur, sans rien installer
@@ -63,25 +71,25 @@ Des liens vers des vidéos spécifiques sont disponibles ci dessous.
 
 
 
-## Interpréteur de commande **Bash** sous Windows
+## Interpréteur de commande **Bash** sous Windows <a id="gitbash">.</a>
 
 <span class="ico-vid">🎥</span> Vidéos : [Version-Windows], [Installer-Gitbash].
 
-Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-64-bit.exe) (ou [32bits](https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-32-bit.exe)).
+Pour avoir une ligne de commande avec l'interpréteur "bash" sous windows, il faut télécharger et installer le logiciel [git for windows](https://git-for-windows.github.io/) qui peut se [télécharger directement (64bits)](https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe) (ou [32bits](https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-32-bit.exe)).
 
 Acceptez tous le choix par défaut lors de l'installation.
 Une fois le programme installé, vous pouvez faire « click bouton droit » dans un dossier puis cliquer sur « Git Bash » dans le menu déroulant, pour lancer un terminal executant « bash ».
 
 Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-bashtips/).
 
-## Emacs sous Windows
+## Emacs sous Windows <a id="emacs"></a>
 
 <span class="ico-vid">🎥</span> Vidéos : [Installer-Emacs].
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
-- Télécharger [une archive zip (64bits)](http://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-x86_64.zip) (ou [32bits](https://ftp.gnu.org/gnu/emacs/windows/emacs-26/emacs-26.3-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
-- Aller dans le dossier `emacs-26.3-i686/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
+- Télécharger [une archive zip (64bits)](http://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-x86_64.zip) (ou [32bits](http://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Aller dans le dossier `emacs-27.1-x86_64/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
 
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
 Suivez « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouvoir lancer emacs depuis le terminal.
@@ -91,7 +99,7 @@ Suivez « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouv
 
 
 
-## **Python3** sous Windows
+## **Python3** sous Windows <a id="python"></a>
 {: #pywin}
 
 <span class="ico-vid">🎥</span> Vidéos : [Version-Windows].
@@ -99,16 +107,16 @@ Suivez « [les trucs et astuces bash]({{page.root}}/more-bashtips/) » pour pouv
 Note: l'installation peut prendre environ 500Mo sur votre disque dur.
 
 Nous allons utiliser l'installateur fourni par le projet Python.
-Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-377/) ou [directement (64bits)](https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe) (ou [32bits](https://www.python.org/ftp/python/3.7.7/python-3.7.7.exe)).
+Il peut être téléchargé via la page [page de téléchargement](https://www.python.org/downloads/release/python-391/) ou [directement (64bits)](https://www.python.org/ftp/python/3.9.1/python-3.9.1-amd64.exe) (ou [32bits](https://www.python.org/ftp/python/3.9.1/python-3.9.1.exe)).
 
-Important : lors de l'installation, **cochez la case « add Python 3.7 to path »** avant de clicker sur « install now ».
+Important : lors de l'installation, **cochez la case « add Python 3.9 to path »** avant de clicker sur « install now ».
 **Copiez quelquepart** le chemin d'installation de Python.
 
 <div style="color: #AAA">
 <p>
 <b>Si</b> cette solution ne marche pas, une autre solution est d'utiliser l'installateur appelé Anaconda (voir [Installer-Python-Anaconda]).
 Il faut télécharger et installer le programme suivant : https://www.anaconda.com/download/
-Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits) et à *Python3.5* (nous voulons Python3 pas <strike>Python2</strike>).
+Attention: choisir la ligne correspondant à votre installation (32 ou 64 bits).
 </p>
 </div>
 
@@ -132,9 +140,9 @@ Vous pouvez aussi essayer d'autres éditeurs de textes.
 À la place d'emacs, il est possible d'utiliser, pour éditer du Python :
 
 - [https://atom.io/](https://atom.io/), un éditeur léger et rapide,
+- [VS Code](https://code.visualstudio.com/Download), un éditeur complet
 - [PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux), en version gratuite « community », un éditeur complet et plein de fonctionalités.
 - Spyder, qui peu s'installer après avoir installé python avec la commande `pip3 install spyder`
-
 
 # Installation pour un système d'exploitation **Mac**
 
@@ -152,7 +160,7 @@ Il est recommandé de suivre les instructions « [Python3 sous Windows](#pywin) 
 Dans les cours/tp, nous montrons « emacs » comme éditeur de texte.
 Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#alteditor) ».
 
-### Emacs (MacOS)
+### Emacs (MacOS) <a id="emacsmacos"></a>
 
 Suivez les instructions (en anglais) sur [http://wikemacs.org/wiki/Installing_Emacs_on_OS_X](http://wikemacs.org/wiki/Installing_Emacs_on_OS_X) et demander de l'aide à vos enseignants en cas de problème.
 
@@ -167,14 +175,14 @@ Voici une liste de commande qui permettent d'installer différents outils et bib
 Les commandes suivantes, lancées dans un terminal, permettent de télécharger et installer des bibliothèques.
 
 ~~~
-pip install pyqt5          # pour qtido
+python3 -m pip install pyqt5          # pour qtido
 
-pip install numpy          # pour le cours de L2 CHI/SPI
-pip install matplotlib
+python3 -m pip install numpy          # pour le cours de L2 CHI/SPI
+python3 -m pip install matplotlib     # pour le cours de L2 CHI/SPI
 
-pip install jupyter        # pour les "cahiers de laboratoire"
-pip install spyder         # éditeur/interpréteur python
-pip install graphviz       # pour l'outil pytoroad.py
+python3 -m pip install jupyter        # pour les "cahiers de laboratoire"
+python3 -m pip install spyder         # éditeur/interpréteur python
+python3 -m pip install graphviz       # pour l'outil pytoroad.py
 ~~~
 
 Selon votre installation, il se peut que vous deviez utiliser `pip3` au lieu de `pip`.
@@ -183,8 +191,8 @@ Si vous avez utilisé "anaconda", vous pouvez devoir utiliser le gestionnaire de
 En cas de problème avec pip, tenter :
 
 ~~~
-python -m pip install --upgrade pip
-pip install certifi
+python3 -m pip install --upgrade pip
+python3 -m pip install certifi
 ~~~
 
 
@@ -246,7 +254,7 @@ Par exemple avec :
 
 -----------------------
 
-# (ancien) Bash ne trouve pas Python {#bashaliaspython}
+# (ancien)(ancien)(ancien) Bash ne trouve pas Python {#bashaliaspython}
 
 *cette section est une discussion qui donne une solution (en utilisant l'éditeur Atom, mais la même chose peut être faite avec emacs ou autre).*
 
