@@ -91,7 +91,7 @@ Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
-- Télécharger [une archive zip (64bits)](http://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-x86_64.zip) (ou [32bits](http://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Télécharger [une archive zip (64bits)](https://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-x86_64.zip) (ou [32bits](https://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
 - Aller dans le dossier `emacs-27.1-x86_64/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
 
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
@@ -166,7 +166,7 @@ Vous pouvez aussi essayer d'autres éditeurs, voir « [Alternatives à Emacs](#a
 ### Emacs (MacOS)
 {: #emacsmacos}
 
-Suivez les instructions (en anglais) sur [http://wikemacs.org/wiki/Installing_Emacs_on_OS_X](http://wikemacs.org/wiki/Installing_Emacs_on_OS_X) et demander de l'aide à vos enseignants en cas de problème.
+Suivez les instructions (en anglais) sur [https://wikemacs.org/wiki/Installing_Emacs_on_OS_X](https://wikemacs.org/wiki/Installing_Emacs_on_OS_X) et demander de l'aide à vos enseignants en cas de problème.
 
 -----------------------
 -----------------------
@@ -281,7 +281,7 @@ Voilà comment faire.
 
 **1)** Tout d'abord il faut trouver où Anaconda a été installé. Dans mon exemple c'est dans « `C:\Users\IEUser\Anaconda3` ».
 Il faut utiliser l'explorateur de fichier windows pour aller dans C: ou dans ton compte utilisateur pour trouver le dossier Anaconda.
-Une fois trouvé, il faut copier ou noter le chemin. Le chemin est accessible en cliquant sur l'icône de dossier dans la barre d'adresse (voir http://grenier.self-access.com/access/le-saviez-vous/copier-un-chemin-windows-rapidement/).
+Une fois trouvé, il faut copier ou noter le chemin. Le chemin est accessible en cliquant sur l'icône de dossier dans la barre d'adresse (voir https://grenier.self-access.com/access/le-saviez-vous/copier-un-chemin-windows-rapidement/).
 
 
 **2)** Maintenant, nous allons créer un fichier de configuration vide.
