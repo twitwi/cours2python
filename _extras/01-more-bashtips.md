@@ -44,6 +44,8 @@ pwd
 # se rappeler du chemin renvoyé par pwd, par exemple /c/Users/Bob
 ```
 
+IMPORTANT: sur MacOS assez récent, il faut remplacer `.bash_profile` par `.zsh_profile`.
+
 - ouvrir emacs avec le menu démarrer Windows
 - à partir de emacs, ouvrir le fichier `.bash_profile` qui est par exemple dans `C:/Users/Bob`
 - garder le fichier ouvert dans emacs
