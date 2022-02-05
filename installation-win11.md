@@ -51,6 +51,22 @@ Tappez `y` (pour yes) quand/si il y a des questions.
 C'est essentiellement pour tester et vérifier que cela fonctionne.
 C'est bien de le faire mais ce n'est pas strictement nécessaire.
 
+## Alternative à partir du terminal windows
+
+Tout est à faire dans le « powershell » windows en tant qu'administrateur (« touche windows » tapper « power shell » et choisir « lancer en tant qu'administrateur »).
+
+~~~
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+# Redémarrer ici
+
+wsl --set-default-version 2
+wsl --update
+wsl --shutdown
+
+wsl -d ubuntu
+~~~
 
 
 ## Installer quelques paquets ubuntu nécessaires
