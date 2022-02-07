@@ -28,29 +28,38 @@ Suivez les instructions sur la page dédiée à votre système :
 
 # Utiliser Python dans un navigateur, sans rien installer
 
-**Solution A** (uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
+**Solution A1** (uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
 
 Le site de Python permet de [lancer un interpreteur](https://www.python.org/shell/) pour faire des essais de manière interactive.
 Python est exécuté sur un serveur (un autre ordinateur) qui est fourni gratuitement, il se peut donc que ce service ne fonctionne pas, selon le nombre de personnes l'utilisant.
 
-**Solution B** (**hors ligne**, uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
+**Solution A2** (**hors ligne**, uniquement pour les **bases**, mais **pas qtido**, **pas numpy**, pas suffisant pour certains TD/TP) :
 
 Le site du projet Brython donne un [éditeur Python](https://brython.info/tests/editor.html?lang=fr) (et une [console interactive](https://brython.info/tests/console.html?lang=fr)).
 Python est ici transformé (compilé) pour être exécuté localement dans votre navigateur web.
+Il est aussi utilisé dans [pythonpad](https://www.pythonpad.co/pads/anonymous/).
 
-**Solution C** (très **légère**, **hors ligne**, marche avec **qtido**, mais **pas numpy**) :
+**Solution B** (très **légère**, **hors ligne**, marche avec **qtido**, mais peu pratique **pas numpy**) :
 
 Prendre le fichier `oijspy-v....html`  sur claroline connect, vous pouvez le télécharger et l'ouvrir localement dans votre navigateur, pour travailler sans internet.
 
+**Solution C** (avec **numpy**, mais **pas qtido**) :
+
+Ici python tourne dans votre navigateur, grâce au projet [pyodide](https://pyodide.org/).
+Des « notebooks » sont accessible comme par exemple avec [jupyterlite](https://github.com/jupyterlite/jupyterlite) que vous pouvez [tester directement](https://jupyterlite.rtfd.io/en/latest/try/lab) (soyez patient au premier lancement).
+Le projet [basthon](https://basthon.fr/) donne aussi accès à une console ou des « notebooks » python.
+
 **Solution D** (pour **numpy**, mais **pas qtido**) :
 
-Plusieurs services qui fait tourner un jupyter notebook sur une machine quelque part et vous y donne accès.
+Plusieurs services qui fait tourner un jupyter notebook sur une machine quelque part et vous y donne accès via un navigateur.
 Un exemple est proposé par [le projet jupyter lui même](https://jupyter.org/try)
 
-**Solution E** (expérimental, pour **numpy**, mais **pas qtido**, potentiellement hors ligne) :
 
+<!--
 Un projet en cours de développement (appelé [pyiodide](https://alpha.iodide.io/)) permet d'utiliser python qui fonctionne totalement dans le navigateur web, y compris avec numpy et matplotlib.
 Par exemple, allez sur [le notebook d'exemple](https://alpha.iodide.io/tryit?) et remplacer le contenu par votre programme (attention à bien garder le `%%py` car le notebook permet de mélanger python et d'autre langages), par exemple copiez ceci (et lancer le avec maj+entrée) :
+-->
+
 
 ~~~py
 %% py
