@@ -55,7 +55,7 @@ Il est recommandé de lire alors [les trucs et astuces bash]({{page.root}}/more-
 
 Pour utiliser emacs, il vous faut d'abord l'installer :
 
-- Télécharger [une archive zip (64bits)](https://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-x86_64.zip) (ou [32bits](https://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
+- Télécharger [une archive zip (64bits)](http://ftp.gnu.org/gnu/emacs/windows/emacs-27/emacs-27.1-x86_64.zip) (ou [32bits](https://ftp.igh.cnrs.fr/pub/gnu/emacs/windows/emacs-27/emacs-27.1-i686.zip)). - Décompresser le fichier téléchargé (bouton droit puis « extraire ici », ou quelque chose de similaire).
 - Aller dans le dossier `emacs-27.1-x86_64/bin` (ou similaire) et double-clicker sur `addpm.exe` (cela va ajouter emacs dans votre menu « démarrer »)
 
 Puis, vous devriez pouvoir le lancer à partir du menu « démarrer ».
