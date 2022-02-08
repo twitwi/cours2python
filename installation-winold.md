@@ -18,8 +18,15 @@ permalink: /installation-winold/
 {: .checklist}
 
 
+# Solution 1: Installation d'une machine virtuelle linux
 
-# Installation pour un système d'exploitation **Windows** (ancien)
+Il est possible d'installer une machine virtuelle linux dans un windows.
+Pour celà, il faut installer par exemple [virtualbox](https://www.virtualbox.org/) et y installer une machine virtuelle linux (par exemple [ubuntu](https://ubuntu.com/download/desktop)).
+Un guide est disponible [en anglais](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox).
+
+Il faut alors, dans la machine virtuelle, suivre les [instructions pour linux]({{page.root}}/installation-linux/)..
+
+# Solution 2: Installation pour un système d'exploitation **Windows** (ancien)
 
 Des <span class="ico-vid">🎥</span> [vidéos][playlist] sont disponible pour illustrer l'installation.
 Des liens vers des vidéos spécifiques sont disponibles ci dessous.

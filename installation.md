@@ -20,7 +20,7 @@ La procédure d'installation dépend de votre système d'exploitation (Windows, 
 Suivez les instructions sur la page dédiée à votre système :
 
 1. [C'est ici pour un ordinateur et un **Windows 11** récent]({{page.root}}/installation-win11/).
-1. [C'est là pour un **Windows plus ancient**]({{page.root}}/installation-winold/).
+1. [C'est là pour un **Windows plus ancien**]({{page.root}}/installation-winold/).
 1. [C'est par ici pour un **MacOS**]({{page.root}}/installation-macos/).
 1. [C'est par là si vous avez **Linux (ubuntu, ...)**]({{page.root}}/installation-linux/).
 
