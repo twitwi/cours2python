@@ -56,6 +56,7 @@ Les commandes suivantes, lancées dans un terminal, permettent de télécharger 
 ~~~
 python3 -m pip install pyqt5          # pour qtido
 python3 -m pip install qtido          # évite de devoir télécharger qtido à chaque TP
+python3 -m pip install -U qtido       # pour le mettre à jour si vous l'aviez installé il y a un moment
 
 python3 -m pip install numpy          # pour le cours de L2 CHI/SPI
 python3 -m pip install matplotlib     # pour le cours de L2 CHI/SPI

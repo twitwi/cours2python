@@ -69,6 +69,7 @@ Les commandes suivantes, lancées dans un terminal, permettent de télécharger 
 
 ~~~
 python3 -m pip install qtido          # évite de devoir télécharger qtido à chaque TP
+python3 -m pip install -U qtido       # pour le mettre à jour si vous l'aviez installé il y a un moment
 
 python3 -m pip install jupyter        # pour les "cahiers de laboratoire"
 python3 -m pip install spyder         # éditeur/interpréteur python

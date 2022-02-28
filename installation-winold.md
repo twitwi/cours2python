@@ -122,9 +122,12 @@ Vous pouvez aussi essayer d'autres éditeurs de textes.
 Voici une liste de commande qui permettent d'installer différents outils et bibliothèques Python utilisée dans les cours ou qui peuvent être utiles.
 Les commandes suivantes, lancées dans un terminal, permettent de télécharger et installer des bibliothèques.
 
+Si "pip" n'est pas installé, télécharger le fichier https://bootstrap.pypa.io/get-pip.py (sauvez-le à un endroit dans lequel vous savez lancer des fichier python) et lancez le avec `python3 get-pip.py`.
+
 ~~~
 python3 -m pip install pyqt5          # pour qtido
 python3 -m pip install qtido          # évite de devoir télécharger qtido à chaque TP
+python3 -m pip install -U qtido       # pour le mettre à jour si vous l'aviez installé il y a un moment
 
 python3 -m pip install numpy          # pour le cours de L2 CHI/SPI
 python3 -m pip install matplotlib     # pour le cours de L2 CHI/SPI
